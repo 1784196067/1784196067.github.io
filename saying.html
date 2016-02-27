@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>服务中心办公室</title>
+<script type="text/javascript" src="jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="xheditor-1.2.2.min.js"></script>
+<script type="text/javascript" src="xheditor_lang/zh-cn.js"></script>.
+<style type='text/css'>
+    .container { margin: 30px auto; width:85%; text-align: center;}
+    table{width:100%;border-collapse:collapse;border:1px solid black;line-height:20pt;position:relative;}
+   // body{margin:50px auto;}
+    td{ border: solid 1px black; }
+    .track{margin: 15px auto; width:100%; text-align: center;}
+   #select_2{position:absolute;right:0px;}
+   a:link{text-decoration:none;color:#000}
+   a:visited{text-decoration:none;}
+   a:hover{text-decoration:underline;text-weight:bold;}
+   a:active{text-decoration:none;}
+   body{background:url(5.jpg) no-repeat center; background-size:cover;}
+</style>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+   // $(":button:eq(0)").click(function(){$("textarea").hide()});
+    $("textarea").attr("visbility","visible");
+  
+    $("#select_2").click(function(){
+    
+    $("table tr").each(function(){
+         if($(this)!=null){
+              $("this").append("<tr><td style="text-align:center"></td><td align=left></td></tr>");
+              $("table:last-child:last-child").html($("textarea").html()); 
+              $("textarea").hide(); } 
+      else{$("table:tr:last-child").html($("textarea").html());} 
+     });
+  });     
+
+});
+
+   
+</script>
+</head>
+
+<body id="bo">
+<div style="text-align:right;"><a href="myoffice.html"><b>回到首页</a></b></div>
+
+<div class="container">
+ <table name="tableName">
+      <tr >
+         <td width:450px>时间</td>
+         <td>你对我说</td>
+      </tr>
+
+      <tr>
+         <td style='text-align:center'>&nbsp</td>
+         <td align=left>&nbsp</td>
+      </tr>
+      <tr>
+         
+      </tr>
+      <tr>
+         
+      </tr>
+      <tr>
+         
+      </tr>
+</table>
+<div class="track" style='position:relative;'>
+   <input type="button"  name='WRITE' value=write id='select_1' width='15px' height='25px' style='position:absolute;right:70px;'>&nbsp&nbsp&nbsp
+    <input type="button" name='POST' value=post id='select_2' width='15px' height='25px' " >
+</div>
+<textarea class="xheditor "  name="textName" style=" text-indent:5pt;visibility:hidden;margin:20px auto;width: 80%; height: 230px;position:absolute;bottom:20px;"   name="content" ></textarea>
+</div>
+</body>
+</html>
